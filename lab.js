@@ -59,18 +59,13 @@ function addNum(newNum)
 
 function addOperation(newOperation)
 {
-	if (currentOperation == '')
-	{
-		document.getElementById('operation').innerHTML += newOperation;
-		currentOperation = newOperation;
-	
-		powerNumber = 0;
+	document.getElementById('operation').innerHTML = newOperation;
+	currentOperation = newOperation;
 
-		document.getElementById('firstNum').style.color = 'silver';
-		document.getElementById('operation').style.display = 'inline-block';
-	}
-	else
-		alert("Error! Operation was added")
+	powerNumber = 0;
+
+	document.getElementById('firstNum').style.color = 'silver';
+	document.getElementById('operation').style.display = 'inline-block';
 }
 
 function backspace()
